@@ -1,4 +1,4 @@
-package q01_basic.question06;
+package q01_basic.question07;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,21 +8,6 @@ import java.io.InputStreamReader;
  * 標準入力を制御するクラス
  */
 class ConsoleReader {
-
-	/**
-	 * 文字列の標準入力。
-	 * 
-	 * @return 入力文字列
-	 * @throws IOException
-	 */
-	public String inputString() throws IOException {
-		//TODO ここから実装する
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		return reader.readLine();
-
-		//		return "";
-	}
-
 	/**
 	 * 整数の標準入力。
 	 * 
@@ -35,9 +20,6 @@ class ConsoleReader {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String input = reader.readLine();
 		return Integer.parseInt(input);
-
-		//		return 0;
-
 	}
 
 }
