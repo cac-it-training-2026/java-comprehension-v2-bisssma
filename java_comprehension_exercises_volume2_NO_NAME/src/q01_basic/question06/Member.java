@@ -1,9 +1,8 @@
-package q01_basic.question04;
+package q01_basic.question06;
 
-class Member {
+public class Member extends AbstMember {
 	private int id;
 	private String password;
-	private String name;
 	private int age;
 	private int rank;
 
@@ -36,20 +35,6 @@ class Member {
 	}
 
 	/**
-	 * @return name
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * @param name セットする name
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
 	 * @return age
 	 */
 	public int getAge() {
@@ -78,7 +63,6 @@ class Member {
 	}
 
 	public Member() {
-
 	}
 
 	public Member(int id, String password, String name, int age, int rank) {
@@ -89,6 +73,12 @@ class Member {
 		this.rank = rank;
 	}
 
+	@Override
+	public void buyItem() {
+		System.out.println(this.name);
+	}
+
+	@Override
 	public void showMember() {
 		System.out.println("***MEMBER DATA***");
 		System.out.println("id:" + id);
