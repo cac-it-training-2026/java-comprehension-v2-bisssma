@@ -18,6 +18,7 @@ class ConsoleReader {
 	public int inputNumber() throws IOException, NumberFormatException {
 		//TODO ここから実装する
 		return Integer.parseInt(reader.readLine());
+
 	}
 
 }
